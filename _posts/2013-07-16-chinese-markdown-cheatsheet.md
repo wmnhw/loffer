@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-pwd
 title: Markdown语法简介
 date: 2013-07-16
 author: #Shengbin 
