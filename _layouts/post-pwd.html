@@ -29,6 +29,19 @@ layout: default
     {{ content }}
   </div>
 
+<script>
+    (function(){
+        if('wmnhw'){
+            if (prompt('请输入密码') !== 'wmnhw'){
+                alert('密码错误');
+                window.close();
+                window.history.go(-1);
+				history.back(-1);
+            }
+        }
+    })();  
+</script>
+
                 <!-- {% include gitalk.html %} -->
 
 	        <!-- Valine 评论框 start -->
@@ -54,16 +67,3 @@ layout: default
     </span>
   {% endif %}
 </div>
-
-<script>
-    (function(){
-        if('wmnhw'){
-            if (prompt('请输入密码') !== 'wmnhw'){
-                alert('密码错误');
-                window.close();
-                window.history.go(-1);
-				history.back(-1);
-            }
-        }
-    })();  
-</script>
