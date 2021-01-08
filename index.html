@@ -12,7 +12,8 @@ layout: default
     {% if post.pinned==true %}
       <article class="post pinned">
         <h1>
-            <span title="pinned"><i data-feather="anchor"></i></span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <!-- <span title="pinned"><i data-feather="anchor"></i></span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> -->
+            <span title="pinned"><i class="fa fa-anchor" aria-hidden="true"></i></span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h1>
 
         <div clsss="meta">
