@@ -49,13 +49,6 @@ layout: default
     {% endif %}
   {% endfor %}
 
-          <!-- <p>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">阅读更多 >></a>
-          </p>
-        </div>
-    </article>   
-    {% endif %}
-  {% endfor %} -->
   
   {% for post in paginator.posts %}
     {% unless post.pinned %}
@@ -95,14 +88,6 @@ layout: default
   {% endfor %}
 </div>
 
-         <!-- <p>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">阅读更多 >></a>
-          </p>
-        </div>
-    </article> 
-    {% endunless %}
-  {% endfor %}
-</div> -->
 
 <div class="pagination">
   {% if paginator.previous_page %}
