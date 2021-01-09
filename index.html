@@ -42,7 +42,7 @@ layout: default
         </div>
 
        <div class="post-excerpt">
-          {{ post.excerpt | strip_html }}
+          {{ post.excerpt }}
           <p>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">阅读更多 >></a>
           </p>
@@ -80,7 +80,7 @@ layout: default
       </div>
 
       <div class="post-excerpt">
-          {{ post.excerpt | strip_html }}
+          {{ post.excerpt }}
           <p>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">阅读更多 >></a>
           </p>
