@@ -42,7 +42,9 @@ layout: default
         </div>
 
        <div class="entry">
-          {{ post.excerpt }}
+          {%   if post.content contains site.excerpt_separator or post.content != post.excerpt %}{{ post.excerpt }}
+          {%   else %}{{ post.content | lstrip | split: "
+" | first }}{% endif %}
           </div>
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">阅读更多 >></a>
       </article>
@@ -79,7 +81,9 @@ layout: default
       </div>
 
       <div class="entry">
-          {{ post.excerpt }}
+          {%   if post.content contains site.excerpt_separator or post.content != post.excerpt %}{{ post.excerpt }}
+          {%   else %}{{ post.content | lstrip | split: "
+" | first }}{% endif %}
           </div>
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">阅读更多 >></a>
