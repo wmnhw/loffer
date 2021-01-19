@@ -42,13 +42,6 @@ layout: default
     })();  
 </script>
 
-                <!-- {% include gitalk.html %} -->
-
-	        <!-- Valine 评论框 start -->
-	       {% if site.valine.enable %}
-                      {% include valine_comments.html %}    
-           {% endif %}
-	       <!-- Valine 评论框 end -->
 </article>
 
 <div class="pagination">
@@ -67,3 +60,11 @@ layout: default
     </span>
   {% endif %}
 </div>
+
+                <!-- {% include gitalk.html %} -->
+
+	        <!-- Valine 评论框 start -->
+	       {% if site.valine.enable %}
+                      {% include valine_comments.html %}    
+           {% endif %}
+	       <!-- Valine 评论框 end -->
